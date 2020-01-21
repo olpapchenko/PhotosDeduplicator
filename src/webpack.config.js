@@ -1,5 +1,6 @@
 const path = require("path");
 const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/js/index.js",
@@ -39,9 +40,15 @@ module.exports = {
     },
     plugins: [
         new CopyPlugin([
-          { from: './src/app.html', to: './app.html' },
           { from: './src/popup.html', to: './popup.html' },
-          { from: './src/manifest.json', to: './manifest.json' }
+
+          { from: './src/js/background.js', to: './background.js' },
+          { from: './src/js/popup.js', to: './popup.js' },
+
+          { from: './src/manifest.json', to: './manifest.json' },
+
+          { from: './src/img', to: './img' }
          ]),
+          new HtmlWebpackPlugin({template: "./src/index.html"})
       ]
 };

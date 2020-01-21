@@ -7,5 +7,5 @@ out/
 *.iml
 *.ipr
 *.iws
-.node_modules/
+node_modules/
 dist/

@@ -1,0 +1,34 @@
+{
+  "name": "photo_deduplicator",
+  "version": "1.0.0",
+  "description": "Google Photoes deduplication chrome extension",
+  "main": "js/background.js",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "Google",
+    "extension",
+    "photo",
+    "deduplication"
+  ],
+  "author": "Oleksandr Papchenko",
+  "license": "GPL-3.0"
+}

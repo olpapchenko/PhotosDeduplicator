@@ -2,10 +2,9 @@
   "name": "Photos deduplicator",
   "version": "1.0",
   "description": "Enables to find google photos duplicates and remove them",
-  "permissions": ["declarativeContent"],
 
   "background": {
-    "scripts": ["js/background.js"],
+    "scripts": ["background.js"],
     "persistent": false
   },
 

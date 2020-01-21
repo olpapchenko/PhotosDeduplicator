@@ -2,7 +2,7 @@
     if (request.message == 'mainButtonAction') {
         chrome.tabs.create({
           active: true,
-          url:  'app.html'
+          url:  'index.html'
         }, null);
     }
   });

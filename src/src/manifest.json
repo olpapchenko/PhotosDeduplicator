@@ -2,7 +2,7 @@
   "name": "Photos deduplicator",
   "version": "1.0",
   "description": "Enables to find google photos duplicates and remove them",
-
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4h5vhwo72xGUEaW2gOBZw8NQJfRhIthnNjZxAnuh/6nOaVAcJyYviHVvhHnaUBwfw3ghcUtVacXjLnNfTcYoXOyWR68HVL/kDpreI33awa6tOj+J97ftsvaRB+QrEYQuL8vJ/dsQnx13RXPQ8RIvvRitRDzdOaQVIheRn3xF7HEDJiNfRKi7i0pj4pssJJWecJ5Q8ni9yqa6GaH49rjZKx3OW9+uOjWvW1gNgvyUJwZ1u3Niw7WpGjRD3rtCNrdwh+3ugADNSlrCOooccN8niIEe84j4VdRxwg5jpYctZO35wxlJm3xe1N9jjDO6SxGPwr3Cnp5aBPECmd2ZAmry6wIDAQAB",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -23,6 +23,11 @@
       "48": "img/photo_48.png",
       "128": "img/photo_128.png"
     }
+  },
+
+  "oauth2": {
+    "client_id": "1094462298938-6q7a3psntk0rsjg6j23se6kbgen58cjk.apps.googleusercontent.com",
+    "scopes":["https://photoslibrary.googleapis.com"]
   },
 
   "manifest_version": 2
